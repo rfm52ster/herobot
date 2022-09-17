@@ -1,10 +1,6 @@
 import telepot
 from telepot.loop import MessageLoop
 
-TOKEN = '5496954434:AAHcqE5uM4gCGZr-_3da7dV-Lb7vDvNO02w'
-bot = telepot.Bot(TOKEN)
-
-
 def handle(msg):
     """ Process request like '3+2' """
     content_type, chat_type, chat_id = telepot.glance(msg)
